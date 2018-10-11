@@ -1,0 +1,30 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+
+    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+    <PackageId>xArchUnit</PackageId>
+    <Description>An archunit (https://github.com/TNG/ArchUnit) inspired test library to check architecture layer</Description>
+    <Authors>Toni Wenzel, Julia Hoess</Authors>
+    <Version>$(SemVer)</Version>
+
+    <PackageTags>unit test architecture layer</PackageTags>
+    <PackageLicenseUrl>https://github.com/twenzel/xArchUnit/blob/master/LICENSE</PackageLicenseUrl>
+    <PackageProjectUrl>https://github.com/twenzel/xArchUnit</PackageProjectUrl>
+
+    <PublishRepositoryUrl>true</PublishRepositoryUrl>
+    <EmbedUntrackedSources>true</EmbedUntrackedSources>
+    <AllowedOutputExtensionsInPackageBuildOutputFolder>$(AllowedOutputExtensionsInPackageBuildOutputFolder);.pdb</AllowedOutputExtensionsInPackageBuildOutputFolder>
+
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="SonarAnalyzer.CSharp" Version="7.6.0.7024">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers</IncludeAssets>
+    </PackageReference>
+    <PackageReference Include="Microsoft.SourceLink.GitHub" Version="1.0.0-beta-63127-02" PrivateAssets="All" />
+  </ItemGroup>
+
+</Project>
