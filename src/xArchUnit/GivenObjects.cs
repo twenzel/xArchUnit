@@ -8,7 +8,7 @@ namespace xArchUnit
 
         public abstract IGivenConjunction<T> Or(Func<T, bool> predicate);
 
-        public abstract ArchRule Should(ArchCondition<T> condition);
+        public abstract ArchRule Should(Condition<T> condition);
 
         public abstract IGivenConjunction<T> That(Func<T, bool> predicate);
     }

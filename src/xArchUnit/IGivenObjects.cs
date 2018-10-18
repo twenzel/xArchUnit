@@ -6,7 +6,7 @@ namespace xArchUnit
 {
     public interface IGivenObjects<T>
     {
-        ArchRule Should(ArchCondition<T> condition);
+        ArchRule Should(Condition<T> condition);
 
         IGivenConjunction<T> That(Func<T, bool> predicate);
     }

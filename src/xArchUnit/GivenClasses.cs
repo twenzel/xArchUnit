@@ -15,7 +15,7 @@ namespace xArchUnit
             throw new NotImplementedException();
         }
 
-        public override ArchRule Should(ArchCondition<Class> condition)
+        public override ArchRule Should(Condition<Class> condition)
         {
             throw new NotImplementedException();
         }

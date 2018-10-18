@@ -1,12 +1,12 @@
 ﻿using System;
 
-namespace xArchUnit
+namespace xArchUnit.Conditions
 {
-    public abstract class ArchCondition<T>
+    public abstract class Condition<T>
     {
         public string Description { get; }
 
-        protected ArchCondition(string description)
+        protected Condition(string description)
         {
             Description = description ?? throw new ArgumentNullException(nameof(description));
         }

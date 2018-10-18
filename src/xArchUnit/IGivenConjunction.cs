@@ -4,7 +4,7 @@ namespace xArchUnit
 {
     public interface IGivenConjunction<T>
     {
-        ArchRule Should(ArchCondition<T> condition);
+        ArchRule Should(Condition<T> condition);
 
         /// <summary>
         /// Combines the current predicate (e.g. {@link Predicates#simpleName(String) simpleName} == 'SomeClass') with
